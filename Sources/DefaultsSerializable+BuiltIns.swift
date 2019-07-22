@@ -84,7 +84,7 @@ extension Dictionary: DefaultsSerializable where Key == String {
 
     public typealias T = [Key: Value]
 
-    public static var _defaults: DefaultsBridge<[Key: Value]> { return DefaultsObjectBridge() }
+    public static var _defaults: DefaultsBridge<[Key: Value]> { return DefaultsKeyedArchiverBridge() }
     public static var _defaultsArray: DefaultsBridge<[[Key: Value]]> { return DefaultsArrayBridge() }
 }
 
